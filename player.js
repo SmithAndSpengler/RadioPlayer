@@ -32,7 +32,7 @@ function startAltStream() {
         checkTimer = undefined;
         firstItemPlayed = false;
         streamStarted = false;
-        altStream = spawn("cvlc", ["-Z", "-L", "-vv", "mp3s/"]); //En repeat playlist verewig -R, -Z is random orde    
+        altStream = spawn("cvlc", ["-Z", "-L", "-vv", "mp3s/"]); //En repeat playlist verewig -L, -Z is random orde    
         altStream.on('exit', () => {
             logInfo("Alt process exited");
         });
